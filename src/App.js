@@ -1,23 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from "./components/Home/Home";
+import Xbox from "./components/Xbox/Xbox";
+import Playstation from "./components/Playstation/Playstation";
+import Crypto from "./components/Crypto/Crypto";
+import Authorization from "./components/Authorization/Authorization";
+import Contacts from "./components/Contacts/Contacts";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import Pc from "./components/PC/Pc";
+import Drivers from "./components/Drivers/Drivers";
+import Regiser from "./components/Authorization/Register";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+            <Navbar/>
+
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/xbox" element={<Xbox/>} />
+                <Route path="/playstation" element={<Playstation/>} />
+                <Route path="/pc" element={<Pc/>} />
+                <Route path="/contacts" element={<Contacts/>} />
+                <Route path="/crypto" element={<Crypto/>} />
+                <Route path="/authorization" element={<Authorization/>} />
+                <Route path="/drivers" element={<Drivers/>} />
+                <Route path="/register" element={<Regiser/>} />
+            </Routes>
+            <Footer/>
+
+
+        </Router>
     </div>
   );
 }
