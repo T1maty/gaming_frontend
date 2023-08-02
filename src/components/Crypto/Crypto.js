@@ -3,16 +3,15 @@ import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 import "../css/util.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import axios from "axios";
+import axios, {Axios} from "axios";
+import {AxiosResponse} from "axios";
 
 const Crypto = () => {
     axios.post('https://localhost:7063/api/Crypto/transfer', {
-
         walletnumber: "string",
         transferamount: "string"
-
     })
-        .then(function (response) {
+        .then(function (response: AxiosResponse <any>) {
             console.log(response);
         })
         .catch(function (error) {
