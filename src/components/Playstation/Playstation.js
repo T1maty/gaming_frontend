@@ -6,12 +6,15 @@ import ps4 from "../img/ps4slim.jpg";
 import ps4pro from "../img/ps4pro.jpg";
 import gamepad from "../img/ps4gamepad.jpg";
 import psplus from "../img/psplus.jpg";
+import addProduct from "../AddProduct/AddProduct";
 const Playstation = () => {
     return(
         <main className="section">
             <div className="container">
                 <h2 className="title-ps">PLAYSTATION PRODUCTS</h2>
-                <h2 className="title-1"><a href="addproduct.html"/> ADD PRODUCT</h2>
+                <h2> <a href="/addproduct" className="txt3">
+                    ADD PRODUCT
+                </a></h2>
 
                 <ul className="projects">
                     <li className="project">

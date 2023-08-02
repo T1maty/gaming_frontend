@@ -4,7 +4,8 @@ import xboxss from "../img/xboxss.jpeg";
 import gamepadx from "../img/gamepadx.jpg";
 import gamepass from "../img/gamepass.jpg";
 import xboxx from "../img/xboxX.png";
-import Footer from "../Footer/Footer";
+import "../css/util.css";
+
 
 const Xbox  = () => {
     return(
@@ -12,7 +13,9 @@ const Xbox  = () => {
         <main className="section">
         <div className="container">
             <h2 className="title-1">XBOX PRODUCTS</h2>
-            <h2 className="title-1"><a href="addproduct.html"/> ADD PRODUCT</h2>
+          <h2> <a href="/addproduct" className="txt3">
+               ADD PRODUCT
+            </a></h2>
 
             <ul className="projects">
 
