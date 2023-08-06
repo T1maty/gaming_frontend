@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from "./components/Home/Home";
-import Xbox from "./components/Xbox/Xbox";
+import Xboxes from "./components/Xbox/Xboxes";
 import Playstation from "./components/Playstation/Playstation";
 import Crypto from "./components/Crypto/Crypto";
 import Authorization from "./components/Authorization/Authorization";
@@ -13,6 +13,7 @@ import Pc from "./components/PC/Pc";
 import Drivers from "./components/Drivers/Drivers";
 import Regiser from "./components/Authorization/Register";
 import AddProduct from "./components/AddProduct/AddProduct";
+import XboxListener from "./components/Xbox/XboxListener/XboxListener";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/xbox" element={<Xbox/>} />
+                <Route path="/xbox" element={<Xboxes/>} />
                 <Route path="/playstation" element={<Playstation/>} />
                 <Route path="/pc" element={<Pc/>} />
                 <Route path="/contacts" element={<Contacts/>} />
@@ -31,6 +32,8 @@ function App() {
                 <Route path="/drivers" element={<Drivers/>} />
                 <Route path="/register" element={<Regiser/>} />
                 <Route path="/addproduct" element={<AddProduct/>} />
+                <Route path="/xbox/:id" element={<XboxListener/>}/>
+
             </Routes>
             <Footer/>
 
