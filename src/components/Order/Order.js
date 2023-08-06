@@ -5,6 +5,24 @@ import axios from "axios";
 import {useState} from "react";
 
 const Order = () => {
+
+    axios.post('https://localhost:7063/api/Customer', {
+
+        FirstName: "string",
+        LastName: "string",
+        gmail: "string",
+        BrunchNumber: 0,
+        Separation: "string",
+        "CreatedDate": "2023-08-06T18:14:43.739Z"
+
+    })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
     return (
         <div className="limiter">
             <div className="container-login100">
@@ -34,6 +52,10 @@ const Order = () => {
                         </div>
                         <div className="wrap-input100 validate-input m-b-16" data-validate="Please enter Address">
                             <input className="input100" type="text" name="address" placeholder="Address" />
+                            <span className="focus-input100"></span>
+                        </div>
+                        <div className="wrap-input100 validate-input m-b-16" data-validate="Please enter Separation">
+                            <input className="input100" type="text" name="separation" placeholder="Separation" />
                             <span className="focus-input100"></span>
                         </div>
 
