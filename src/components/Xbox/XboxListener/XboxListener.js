@@ -20,9 +20,11 @@ const XboxListener = () => {
                         <p>{selectedXbox.skills}</p>
                         <p>{selectedXbox.price}</p>
                     </div>
-                     <div>
-
-                      </div>
+                    <div className="container-login100-form-btn">
+                        <a href="/order" className="txt3">
+                            Order now
+                        </a>
+                    </div>
 
                 </div>
             </div>
