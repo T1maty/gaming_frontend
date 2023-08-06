@@ -12,16 +12,16 @@ const Footer = () => {
                 <div className="footer__wrapper">
                     <ul className="social">
                         <li className="social__item">
-                            <a href="#!"><img src={inst} alt="Link"/></a>
+                            <a href="https://www.instagram.com/timofey_._3/"><img src={inst} alt="Link"/></a>
                         </li>
                         <li className="social__item">
-                            <a href="#!"><img src={twitter} alt="Link"/></a>
+                            <a href="https://twitter.com/Timofey19407500"><img src={twitter} alt="Link"/></a>
                         </li>
                         <li className="social__item">
-                            <a href="#!"><img src={github} alt="Link"/></a>
+                            <a href="https://github.com/T1maty"><img src={github} alt="Link"/></a>
                         </li>
                         <li className="social__item">
-                            <a href="#!"><img src={linkedin} alt="Link"/></a>
+                            <a href="https://www.linkedin.com/in/timofey-fedoryk-5a0926258/"><img src={linkedin} alt="Link"/></a>
                         </li>
                     </ul>
                     <div className="copyright">
