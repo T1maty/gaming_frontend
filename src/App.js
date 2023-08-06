@@ -15,6 +15,7 @@ import Regiser from "./components/Authorization/Register";
 import AddProduct from "./components/AddProduct/AddProduct";
 import XboxListener from "./components/Xbox/XboxListener/XboxListener";
 import Order from "./components/Order/Order";
+import CompleteOrder from "./components/Order/CompleteOrder";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
                 <Route path="/addproduct" element={<AddProduct/>} />
                 <Route path="/xbox/:id" element={<XboxListener/>}/>
                 <Route path="/order" element={<Order/>}/>
+                <Route path="/complete-order" element={<CompleteOrder/>}/>
+
 
 
             </Routes>

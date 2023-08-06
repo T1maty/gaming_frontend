@@ -38,9 +38,9 @@ const Order = () => {
                         </div>
 
                         <div className="container-login100-form-btn">
-                            <button className="login100-form-btn">
+                            <a href="/complete-order" className="login100-form-btn">
                                 Complete Order
-                            </button>
+                            </a>
                         </div>
 
                     </form>
