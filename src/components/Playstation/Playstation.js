@@ -1,53 +1,15 @@
-import "../css/main.css";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navbar/Navbar";
-import ps5 from "../img/playstation5.jpg";
-import ps4 from "../img/ps4slim.jpg";
-import ps4pro from "../img/ps4pro.jpg";
-import gamepad from "../img/ps4gamepad.jpg";
-import psplus from "../img/psplus.jpg";
-import addProduct from "../AddProduct/AddProduct";
-const Playstation = () => {
-    return(
-        <main className="section">
-            <div className="container">
-                <h2 className="title-ps">PLAYSTATION PRODUCTS</h2>
-                <h2> <a href="/addproduct" className="txt3">
-                    ADD PRODUCT
-                </a></h2>
+import { NavLink } from 'react-router-dom';
+import '../css/main.css';
 
-                <ul className="projects">
-                    <li className="project">
-                        <a href="./playstation.html">
-                            <img src={ps5} alt="Project img" className="project__img"/>
-                                <h3 className="project__title">PLAYSTATION 5 NEW!</h3>
-                        </a>
-                    </li>
-                    <li className="project">
-                        <a href="./playstation.html">
-                            <img src={ps4} alt="Project img" className="project__img"/>
-                                <h3 className="project__title">PLAYSTATION 4 SLIM </h3>
-                        </a>
-                    </li>
-                    <li className="project">
-                        <a href="./playstation.html">
-                            <img src={ps4pro} alt="Project img" className="project__img"/>
-                                <h3 className="project__title">PLAYSTATION 4 PRO </h3>
-                        </a>
-                    </li>
+const Project = ({ title, img, index }) => {
+    return (
+        <NavLink to={`/playstation/${index}`}>
+            <li className="project">
+                <img src={img} alt={title} className="project__img" />
+                <h3 className="project__title">{title}</h3>
+            </li>
+        </NavLink>
+    );
+};
 
-                    <li className="project">
-                        <img src={gamepad} alt="Project img" className="project__img"/>
-                            <h3 className="project__title">PLAYSTATION 4 GAMEPAD </h3>
-                    </li>
-                    <li className="project">
-                        <img src={psplus} alt="Project img" className="project__img"/>
-                            <h3 className="project__title">PLAYSTATION PLUS 12 month </h3>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-)
-}
-export default Playstation;
+export default Project;

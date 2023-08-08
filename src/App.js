@@ -15,7 +15,8 @@ import Regiser from "./components/Authorization/Register";
 import AddProduct from "./components/AddProduct/AddProduct";
 import XboxListener from "./components/Xbox/XboxListener/XboxListener";
 import Order from "./components/Order/Order";
-import CompleteOrder from "./components/Order/CompleteOrder";
+import PlaystationListener from "./components/Playstation/PlaystationListener/PlaystationListener";
+import Playstations from "./components/Playstation/Playstations";
 
 function App() {
   return (
@@ -26,7 +27,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/xbox" element={<Xboxes/>} />
-                <Route path="/playstation" element={<Playstation/>} />
+                <Route path="/xbox/:id" element={<XboxListener/>}/>
+                <Route path="/playstation" element={<Playstations/>} />
+                <Route path="/playstation/:id" element={<PlaystationListener/>}/>
                 <Route path="/pc" element={<Pc/>} />
                 <Route path="/contacts" element={<Contacts/>} />
                 <Route path="/crypto" element={<Crypto/>} />
@@ -34,9 +37,8 @@ function App() {
                 <Route path="/drivers" element={<Drivers/>} />
                 <Route path="/register" element={<Regiser/>} />
                 <Route path="/addproduct" element={<AddProduct/>} />
-                <Route path="/xbox/:id" element={<XboxListener/>}/>
                 <Route path="/order" element={<Order/>}/>
-                <Route path="/complete-order" element={<CompleteOrder/>}/>
+
 
 
 
