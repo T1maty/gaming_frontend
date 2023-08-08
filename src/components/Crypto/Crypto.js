@@ -1,5 +1,4 @@
 import "../css/main.css";
-import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 import "../css/util.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
