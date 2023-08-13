@@ -299,7 +299,6 @@ iframe {
     color: #1b3815;
     line-height: 1.2;
     position: relative;
-    display: block;
     width: 100%;
     height: 55px;
     background: #ebebeb;
@@ -313,7 +312,6 @@ iframe {
 
 .focus-input100 {
     display: block;
-    position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
