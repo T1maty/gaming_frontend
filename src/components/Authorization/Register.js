@@ -5,6 +5,7 @@ import Validation from "../../Validation/Validation";
 
 const Regiser = () => {
 
+    function SendRequest() {
     axios.post('https://localhost:7063/api/Auth/register', {
 
         gmail: "string",
@@ -18,7 +19,7 @@ const Regiser = () => {
             console.log(error);
         });
 
-
+    }
     const [values, setValues] = useState({
         username:'',
         password:''
@@ -75,7 +76,7 @@ const Regiser = () => {
                         </div>
 
                         <div className="container-login100-form-btn">
-                            <button className="login100-form-btn">
+                            <button className="login100-form-btn" onClick={SendRequest}>
                                 Sign up
                             </button>
                         </div>
