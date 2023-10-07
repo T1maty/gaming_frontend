@@ -17,6 +17,7 @@ import XboxListener from "./components/Xbox/XboxListener/XboxListener";
 import Order from "./components/Order/Order";
 import PlaystationListener from "./components/Playstation/PlaystationListener/PlaystationListener";
 import Playstations from "./components/Playstation/Playstations";
+import Register from "./components/Authorization/Register";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
                 <Route path="/crypto" element={<Crypto/>} />
                 <Route path="/authorization" element={<Authorization/>} />
                 <Route path="/drivers" element={<Drivers/>} />
-                <Route path="/register" element={<Regiser/>} />
+                <Route path="/register" element={<Register/>} />
                 <Route path="/addproduct" element={<AddProduct/>} />і
                 <Route path="/order" element={<Order/>}/>
 

@@ -1,6 +1,6 @@
 import "../components/css/main.css";
 import xboxss from "../components/img/xboxss.jpeg";
-import gamepad from "../components/img/gamepadx.jpg";
+import gamepad from "../../build/static/media/gamepadx.jpg";
 import gamepass from "../components/img/gamepass.jpg";
 import xboxsx from "../components/img/xboxsx.png";
 
