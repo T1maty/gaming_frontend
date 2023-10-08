@@ -1,6 +1,5 @@
 import "../css/main.css";
 import {NavLink} from "react-router-dom";
-import BtnDarkMode from "../BtnDarkMode/BtnDarkMode";
 
 const Navbar = () => {
 
@@ -15,7 +14,7 @@ const Navbar = () => {
 
 
 
-                <BtnDarkMode/>
+
 
                 <ul className="nav-list">
                     <li className="nav-list__item">

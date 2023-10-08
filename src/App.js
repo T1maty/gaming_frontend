@@ -11,7 +11,6 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Pc from "./components/PC/Pc";
 import Drivers from "./components/Drivers/Drivers";
-import Regiser from "./components/Authorization/Register";
 import AddProduct from "./components/AddProduct/AddProduct";
 import XboxListener from "./components/Xbox/XboxListener/XboxListener";
 import Order from "./components/Order/Order";
@@ -39,11 +38,8 @@ function App() {
                 <Route path="/register" element={<Register/>} />
                 <Route path="/addproduct" element={<AddProduct/>} />і
                 <Route path="/order" element={<Order/>}/>
-
-
-
-
             </Routes>
+
             <Footer/>
 
 
