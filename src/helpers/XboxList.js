@@ -1,6 +1,5 @@
 import "../components/css/main.css";
 import xboxss from "../components/img/xboxss.jpeg";
-import gamepad from "../../build/static/media/gamepadx.jpg";
 import gamepass from "../components/img/gamepass.jpg";
 import xboxsx from "../components/img/xboxsx.png";
 
@@ -10,12 +9,6 @@ const xboxlist = [
         skills:'This is a next-gen console',
         img:xboxss,
         price: '300 $'
-    },
-    {
-        title: 'XBOX SERIES X GAMEPAD',
-        skills:'Black gamepad Xboxes SX',
-        img:gamepad,
-        price: '65 $'
     },
     {
         title: 'XBOX GAMEPASS Ultimate',
