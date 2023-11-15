@@ -6,56 +6,37 @@ import Validation from "../../Validation/Validation";
 
 
 const Authorization = () => {
-    axios.post('https://localhost:7063/api/Auth/login', {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
-        username: "string",
-        password: "string"
-
-    })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
-
-    const [values, setValues] = useState({
-        username:'',
-        password:''
-    })
-
-
-const  [errors,setErrors] = useState({})
-    function handleInput(event) {
-    const newObject  = {...values, [event.target.username]: event.target.value}
-        setValues(newObject)
+    const configuration = {
+        method:"post",
+        url:"http://localhost:5000/auth/registration",
+        data:{
+            username,
+            password,
+        },
+    };
+    function SendRequest(){
+        axios(configuration)
     }
-
-function handleValidation(event) {
-        event.preventDefault();
-        setErrors(Validation(values));
-}
-
     return (
         <div className="limiter">
             <div className="container-login100">
                 <div className="wrap-login100">
-                    <form className="login100-form validate-form p-l-55 p-r-55 p-t-178" onSubmit={handleValidation}>
+                    <form className="login100-form validate-form p-l-55 p-r-55 p-t-178" >
                     <span className="login100-form-title">
 						Sign In
 					</span>
 
                         <div className="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                            <input className="input100" type="text" name="username" placeholder="Username" onChange={handleInput}/>
+                            <input className="input100" type="text" name="username" value={username} onChange={(e) => setUsername((e.target.value))} placeholder="Username"/>
                                 <span className="focus-input100"></span>
-                            {errors.username && <p style={{color:"red"}}>{errors.username}</p>}
                         </div>
 
                         <div className="wrap-input100 validate-input" data-validate="Please enter password">
-                            <input className="input100" type="password" name="pass" placeholder="Password" onChange={handleInput}/>
+                            <input className="input100" type="password" name="pass" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password"/>
                                 <span className="focus-input100"></span>
-                            {errors.password && <p style={{color:"red"}}>{errors.password}</p>}
 
                         </div>
 
