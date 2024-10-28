@@ -36,7 +36,7 @@ function App() {
                 <Route path="/authorization" element={<Authorization/>} />
                 <Route path="/drivers" element={<Drivers/>} />
                 <Route path="/register" element={<Register/>} />
-                <Route path="/addproduct" element={<AddProduct/>} />і
+                <Route path="/addproduct" element={<AddProduct/>} />
                 <Route path="/order" element={<Order/>}/>
             </Routes>
 
