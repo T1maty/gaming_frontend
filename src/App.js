@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from "./components/Home/Home";
 import Xboxes from "./components/Xbox/Xboxes";
-import Playstation from "./components/Playstation/Playstation";
 import Crypto from "./components/Crypto/Crypto";
 import Authorization from "./components/Authorization/Authorization";
 import Contacts from "./components/Contacts/Contacts";

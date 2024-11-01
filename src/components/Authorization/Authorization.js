@@ -2,7 +2,7 @@ import "../css/main.css";
 import "../css/util.css";
 import axios from "axios";
 import {useState} from "react";
-import Validation from "../../Validation/Validation";
+//import Validation from "../../Validation/Validation";
 
 
 const Authorization = () => {
@@ -17,9 +17,9 @@ const Authorization = () => {
             password,
         },
     };
-    function SendRequest(){
-        axios(configuration)
-    }
+    //function SendRequest(){
+       // axios(configuration)
+    //}
     return (
         <div className="limiter">
             <div className="container-login100">

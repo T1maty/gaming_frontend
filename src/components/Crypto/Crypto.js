@@ -1,21 +1,21 @@
 import "../css/main.css";
 import "../css/util.css";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+//import Navbar from "../Navbar/Navbar";
+//import Footer from "../Footer/Footer";
 import axios, {Axios} from "axios";
-import {AxiosResponse} from "axios";
+//import {AxiosResponse} from "axios";
 
 const Crypto = () => {
     axios.post('https://localhost:7063/api/Crypto/transfer', {
         walletnumber: "string",
         transferamount: "string"
     })
-        .then(function (response: AxiosResponse <any>) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
+       // .then(function (response: AxiosResponse <any>) {
+          //  console.log(response);
+        //})
+        //.catch(function (error) {
+          //  console.log(error);
+        //});
     return (
 
         <div className="limiter">

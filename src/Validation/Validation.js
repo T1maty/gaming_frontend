@@ -2,7 +2,7 @@ export  default  function Validation(values) {
 const errors = {}
 
 
-    const username_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/;
+   // const username_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/;
 
     const email_pattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/;
 

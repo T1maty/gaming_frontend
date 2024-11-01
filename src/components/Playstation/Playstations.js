@@ -1,7 +1,7 @@
 import "../css/main.css";
 
 import "../css/util.css";
-import psL from "./PlaystationListener/PlaystationListener";
+//import psL from "./PlaystationListener/PlaystationListener";
 import {pslist} from "../../helpers/PlaystationList";
 import Playstation from "./Playstation";
 

@@ -1,16 +1,16 @@
 import "../css/main.css";
 import {useEffect} from "react";
 import axios from "axios";
-import alex from "../img/f1/alex.jpg";
+//import alex from "../img/f1/alex.jpg";
 import alonso from "../img/f1/alonso.jpg";
 import bottas from "../img/f1/bottas.jpg";
 import carlos from "../img/f1/carlos.jpg";
 import daniel from "../img/f1/daniel.jpg";
-import george from "../img/f1/george_russell.png";
-import hamilton from "../img/f1/hamilton.jpg";
+//import george from "../img/f1/george_russell.png";
+//import hamilton from "../img/f1/hamilton.jpg";
 import lance from "../img/f1/lance.jpg";
 import lando from "../img/f1/lando.jpg";
-import latifi from "../img/f1/latifi.jpg";
+//import latifi from "../img/f1/latifi.jpg";
 import leclerc from "../img/f1/leclerc.jpg";
 import max from "../img/f1/maxverstappen.jpg";
 import mick from "../img/f1/mick.jpg";
@@ -23,12 +23,12 @@ import kevin from "../img/f1/kevin.jpg";
 
 const Drivers = () => {
 
-    useEffect(() => {
-        axios.get("https://localhost:7063/api/Drivers")
-            .then((response: AxiosResponse<any>) => {
-                console.log(response.data)
-            })
-    }, [])
+    //useEffect(() => {
+       // axios.get("https://localhost:7063/api/Drivers")
+         //   .then((response: AxiosResponse<any>) => {
+           //     console.log(response.data)
+            //})
+    //}, [])
 
     return (
         <main className="section">
