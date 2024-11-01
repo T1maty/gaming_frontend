@@ -2,7 +2,7 @@ import "../css/main.css";
 import "../css/util.css";
 //import Navbar from "../Navbar/Navbar";
 //import Footer from "../Footer/Footer";
-import axios, {Axios} from "axios";
+//import axios, {Axios} from "axios";
 //import {AxiosResponse} from "axios";
 
 const Crypto = () => {

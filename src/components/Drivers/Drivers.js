@@ -1,6 +1,6 @@
 import "../css/main.css";
-import {useEffect} from "react";
-import axios from "axios";
+//import {useEffect} from "react";
+//import axios from "axios";
 //import alex from "../img/f1/alex.jpg";
 import alonso from "../img/f1/alonso.jpg";
 import bottas from "../img/f1/bottas.jpg";
