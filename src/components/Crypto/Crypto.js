@@ -6,10 +6,10 @@ import "../css/util.css";
 //import {AxiosResponse} from "axios";
 
 const Crypto = () => {
-    axios.post('https://localhost:7063/api/Crypto/transfer', {
-        walletnumber: "string",
-        transferamount: "string"
-    })
+    //axios.post('https://localhost:7063/api/Crypto/transfer', {
+      //  walletnumber: "string",
+       // transferamount: "string"
+    //})
        // .then(function (response: AxiosResponse <any>) {
           //  console.log(response);
         //})
