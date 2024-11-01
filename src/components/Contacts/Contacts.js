@@ -1,6 +1,6 @@
 import "../css/main.css";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
+///import Navbar from "../Navbar/Navbar";
+///import Footer from "../Footer/Footer";
 
 const Contacts = () => {
     return (

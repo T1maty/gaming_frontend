@@ -1,7 +1,7 @@
 import "../css/main.css";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
-import Xboxes from "../Xbox/Xboxes";
+//import Navbar from "../Navbar/Navbar";
+//import Footer from "../Footer/Footer";
+//import Xboxes from "../Xbox/Xboxes";
 const Home = () => {
 
 

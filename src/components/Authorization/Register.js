@@ -1,7 +1,7 @@
 import "../css/main.css"
 import axios from "axios";
 import {useState} from "react";
-import Validation from "../../Validation/Validation";
+///import Validation from "../../Validation/Validation";
 
 const Register = () => {
 
