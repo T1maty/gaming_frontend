@@ -1,6 +1,6 @@
 import "../css/main.css";
 import "../css/util.css";
-import axios from "axios";
+//import axios from "axios";
 import {useState} from "react";
 //import Validation from "../../Validation/Validation";
 
@@ -9,14 +9,14 @@ const Authorization = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
-    const configuration = {
-        method:"post",
-        url:"http://localhost:5000/auth/registration",
-        data:{
-            username,
-            password,
-        },
-    };
+   // const configuration = {
+     //   method:"post",
+      //  url:"http://localhost:5000/auth/registration",
+       // data:{
+         //   username,
+          //  password,
+      //  },
+    //};
     //function SendRequest(){
        // axios(configuration)
     //}
