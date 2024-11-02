@@ -45,9 +45,9 @@ const Authorization = () => {
 							Forgot
 						</span>
 
-                            <a href="#" className="txt2">
-                                Username / Password?
-                            </a>
+                        <button onClick={handleUsernamePasswordClick} className="txt2">
+                            Username / Password?
+                         </button>
                         </div>
 
                         <div className="container-login100-form-btn">
