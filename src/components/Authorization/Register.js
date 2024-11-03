@@ -76,9 +76,10 @@ const Register = () => {
 							Forgot
 						</span>
 
-                        <button onClick={handleUsernamePasswordClick} className="txt2">
-                            Username / Password?
-                        </button>
+                        function handleUsernamePasswordClick()
+                        {
+                            console.log("Username/password ling clicked")
+                        }
                         </div>
 
                         <div className="container-login100-form-btn">
