@@ -1,0 +1,12 @@
+name: workflow for gaming using Snyk security scan
+on: push
+jobs:
+    security:
+        runs-on:  ubuntu-latest
+        steps:
+          -  uses:  actions/checkout@master
+          -  name: Run Snyk to check for vulnerabilities
+             uses: snyk/actions/maven@master
+             continue-on-error: true
+             env:
+                SNYK_TOKEN: ${54232c2d-3288-423f-b9a5-f88738045b24}
