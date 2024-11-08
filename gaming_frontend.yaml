@@ -17,3 +17,5 @@ spec:
           image:  terms124/gaming_frontend
           ports:
             - containerPort:  3000
+
+# test text and commit
