@@ -1,12 +1,30 @@
-name: workflow for gaming using Snyk security scan
-on: push
+name: Snyk Security Scan
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-    security:
-        runs-on:  ubuntu-latest
-        steps:
-          -  uses:  actions/checkout@v3
-          -  name: Run Snyk to check for vulnerabilities
-             uses: snyk/actions/maven@master
-             continue-on-error: true
-             env:
-                SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@v3
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        continue-on-error: true
