@@ -1,20 +1,38 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app
+  name: gaming-frontend-deployment
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: react-app
+      app: gaming-frontend
   template:
     metadata:
       labels:
-        app: react-app
+        app: gaming-frontend
     spec:
       containers:
-        - name: react-app
-          image:  terms124/gaming_frontend
+        - name: gaming-frontend
+          image: gaming_frontend:latest
+          imagePullPolicy: IfNotPresent
           ports:
-            - containerPort:  3000
-
+            - containerPort: 3000
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gaming-frontend-service
+spec:
+  selector:
+    app: gaming-frontend
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+      nodePort: 30000
