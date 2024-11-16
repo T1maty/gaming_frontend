@@ -14,14 +14,11 @@ spec:
     spec:
       containers:
         - name: gaming-frontend
-          image: gaming_frontend:latest
+          image: terms124/gaming_frontend:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
-          resources:
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
+      
 ---
 apiVersion: v1
 kind: Service
@@ -30,9 +27,8 @@ metadata:
 spec:
   selector:
     app: gaming-frontend
-  type: NodePort
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30000
+  type: NodePort
