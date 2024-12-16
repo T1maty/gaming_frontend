@@ -10,3 +10,6 @@ spec:
       nodePort: 30000
   selector:
     app: react-app
+ 
+ - name: Run SonarQube Scanner
+ run: sonar-scanner -X
